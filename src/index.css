@@ -1,0 +1,127 @@
+@import 'tailwindcss';
+
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  /* Darker, more professional background */
+  background-color: #0f172a;
+  color: #f1f5f9;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* GPU acceleration for animations */
+.group,
+.motion,
+[class*='hover:'] {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+
+  /* Modern Teal/Cyan accent instead of Purple */
+  --accent-color: #2dd4bf;
+  --accent-hover: #22d3ee;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 600;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+button {
+  border-radius: 12px; /* Slightly rounder, modern feel */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #1e293b;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover {
+  border-color: var(--accent-color);
+  background-color: rgba(45, 212, 191, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(45, 212, 191, 0.15);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px auto var(--accent-color);
+}
+
+/* Rest of the media queries remain the same structure but inherit new colors */
+
+@media (max-width: 767px) {
+  .section-padding {
+    padding: 2.5rem 1.25rem;
+  }
+}
+
+/* Custom Scrollbar for that 'Pro' feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
