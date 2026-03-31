@@ -133,30 +133,20 @@ const Portfolio = () => {
 
   const projects = [
     {
-      name: 'Raw-Words Secure Blogging Platform',
+      name: 'Kanban-Board',
       Image:
         'https://img.freepik.com/free-vector/blogging-concept-illustration_114360-1038.jpg',
-      description:
-        'A secure MERN blogging application with Google login, JWT authentication, search feature, interactions via like & comments, and Role based access for Admin.',
-      technologies: [
-        'React.Js',
-        'Node.js',
-        'Express.js',
-        'MongoDB',
-        'TailwindCSS',
-        'JWT',
-        'Cloudinary',
-        'Multer',
-      ],
-      liveDemo: 'https://raw-words-blog-site-6klq.vercel.app/',
-      github: 'https://github.com/DevanshSingh9090/raw-words-blog-site',
+      description: 'Professional Kanban board built with vanilla JavaScript',
+      technologies: ['HTML', 'CSS3', 'JavaScript'],
+      liveDemo: 'https://vaibhavkrla.github.io/kanban-board/',
+      github: 'https://github.com/VaibhavKrla/kanban-board',
     },
     {
-      name: 'portfolio-website',
+      name: 'Portfolio-Website',
       Image:
         'https://img.freepik.com/free-vector/portfolio-concept-illustration_114360-1504.jpg',
       description:
-        'A sleek portfolio website showcasing my projects and skills.',
+        'Personal Portfolio of a Computer Science Engineer specializing in Full-Stack Web Development. Built with React and Tailwind CSS.',
       technologies: [
         'TailwindCSS',
         'React.js',
@@ -169,39 +159,57 @@ const Portfolio = () => {
         'Media Query',
       ],
       liveDemo: '#',
-      github: 'https://github.com/DevanshSingh9090/PortfolioSite',
+      github: 'https://github.com/VaibhavKrla/portfolio-site',
     },
     {
-      name: 'Chrome extension- Word-View',
+      name: 'Product-Store-PERN',
       Image:
         'https://img.freepik.com/free-vector/blogging-concept-illustration_114360-1038.jpg',
       // "https://img.freepik.com/free-vector/taxi-app-concept_23-2148485646.jpg",
       description:
-        'Built a Chrome Extension which helps users instantly get grammar and vocabulary explanations for any text they highlight on a webpage, powered by Google’s Gemini API.',
-      technologies: ['HTML', 'CSS', 'Javascript', 'Google Gemini API'],
-      liveDemo: 'https://github.com/DevanshSingh9090/extension-js',
-      github: 'https://github.com/DevanshSingh9090/extension-js',
+        'This project, titled POSGRESTORE, is a modern full-stack inventory management application. It provides a clean, responsive interface for users to perform CRUD (Create, Read, Update, Delete) operations on a product catalog, including managing product names, prices, and image URLs.',
+      technologies: [
+        'React19',
+        'Vite',
+        'Zustand',
+        'TailwindCSS',
+        'Neon',
+        'Arcjet',
+      ],
+      liveDemo: '#',
+      github: 'https://github.com/VaibhavKrla/product-store-pern',
     },
     {
-      name: 'Password Generator',
+      name: 'Socially',
       Image:
         'https://img.freepik.com/free-vector/password-generator-interface-concept-illustration_114360-1236.jpg',
       description:
-        'A responsive password generator with custom length, special characters, and one-click copy feature.',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
-      liveDemo: 'https://unrivaled-marshmallow-e87e14.netlify.app/',
-      github: 'https://github.com/DevanshSingh9090/PasswordGenerator',
+        'Socially is a responsive, full-stack social platform featuring user profiles, image-supported posts, and interactive "Like" and "Comment" systems. It includes a robust notification engine for social alerts and built-in dark mode for a seamless desktop and mobile experience.',
+      technologies: [
+        'Next.js',
+        'React 18',
+        'Tailwind CSS',
+        'Clerk',
+        'PostgreSQL',
+      ],
+      liveDemo: '#',
+      github: 'https://github.com/VaibhavKrla/socially-nextjs',
     },
     {
-      name: 'Razorpay Clone',
+      name: 'Backend-Ledger',
       Image:
-        'https://media.licdn.com/dms/image/v2/D4D12AQHOUIZww-P8_A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1703780349476?e=2147483647&v=beta&t=vfTqyjuz75mDKCWLqhlQV0mCcPUgd9Blb8yMQmueEhI',
+        'https://img.freepik.com/free-vector/blogging-concept-illustration_114360-1038.jpg',
       description:
-        'A sleek Razorpay landing page clone using Tailwind CSS for styling and responsiveness.',
-      technologies: ['HTML', 'TailwindCSS', 'Media Query'],
+        'backend-ledger is a secure P2P financial system featuring an immutable ledger for transparent auditing. It ensures data integrity and prevents duplicate transactions through MongoDB atomic sessions and idempotency keys.',
+      technologies: [
+        'Javscript',
+        'JWT',
+        'Cookie-parser',
+        'MongoDB',
+        'Express.js',
+      ],
       liveDemo: '#',
-      github:
-        'https://github.com/DevanshSingh9090/RazorPayFrontendCloneTailwind',
+      github: 'https://github.com/VaibhavKrla/backend-ledger',
     },
   ]
 
