@@ -133,6 +133,26 @@ const Portfolio = () => {
 
   const projects = [
     {
+      name: '📖 DocMind — RAG PDF Chat Assistant',
+      Image:
+        'https://img.freepik.com/free-vector/portfolio-concept-illustration_114360-1504.jpg',
+      description:
+        'DocMind is a Retrieval-Augmented Generation (RAG) based PDF chatbot built using Streamlit, LangChain, and Mistral AI. It enables users to upload documents, generate embeddings, and ask questions using semantic search, ChromaDB vector store, and MMR-based retrieval for accurate, context-aware responses in real time.',
+      technologies: [
+        'Python',
+        'Streamlit',
+        'LangChain',
+        'Mistral AI',
+        'ChromaDB',
+        'RAG (Retrieval-Augmented Generation)',
+        'Vector Embeddings',
+        'Semantic Search',
+      ],
+      liveDemo:
+        'https://docmind-rag-pdf-chatbot-7tza8c37tc97l6ffiatfpr.streamlit.app/',
+      github: 'https://github.com/VaibhavKrla/DocMind-RAG-PDF-Chatbot',
+    },
+    {
       name: 'Kanban-Board',
       Image:
         'https://img.freepik.com/free-vector/blogging-concept-illustration_114360-1038.jpg',
